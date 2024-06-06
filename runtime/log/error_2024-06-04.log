@@ -1,0 +1,96 @@
+panic error time:2024-06-04 22:42:44
+runtime error: invalid memory address or nil pointer dereference
+stacktrace from panic:goroutine 52 [running]:
+runtime/debug.Stack()
+	/usr/local/go/src/runtime/debug/stack.go:24 +0x5e
+gin-ranking/pkg/logger.Recover.func1()
+	/home/abulish/goProject/netCourses/gin-dianZanZhuLiGongNeng/demo/pkg/logger/logger.go:142 +0x2aa
+panic({0x9fade0?, 0xf63d50?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+github.com/gin-contrib/sessions.(*session).Session(0xc000130550)
+	/root/go/pkg/mod/github.com/gin-contrib/sessions@v1.0.1/sessions.go:132 +0x2a
+github.com/gin-contrib/sessions.(*session).Set(0xc000130550, {0x9c7aa0, 0xc000193070}, {0x9c7ce0, 0xf35cb8})
+	/root/go/pkg/mod/github.com/gin-contrib/sessions@v1.0.1/sessions.go:88 +0x30
+gin-ranking/controllers.UserController.Login({}, 0xc0002d4100)
+	/home/abulish/goProject/netCourses/gin-dianZanZhuLiGongNeng/demo/controllers/user.go:73 +0x351
+github.com/gin-gonic/gin.(*Context).Next(0xc0002d4100)
+	/root/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185 +0x2b
+gin-ranking/router.Router.Sessions.func1(0xc0002d4100)
+	/root/go/pkg/mod/github.com/gin-contrib/sessions@v1.0.1/sessions.go:54 +0x169
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/root/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+gin-ranking/pkg/logger.Recover(0xc0002d4100)
+	/home/abulish/goProject/netCourses/gin-dianZanZhuLiGongNeng/demo/pkg/logger/logger.go:152 +0x62
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/root/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc0002d4100)
+	/root/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249 +0xe5
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/root/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1(0xc0002d4100)
+	/root/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102 +0x7a
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/root/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc0002d4100)
+	/root/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249 +0xe5
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/root/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0xc0005cc1a0, 0xc0002d4100)
+	/root/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633 +0x892
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0xc0005cc1a0, {0xb90ce8, 0xc00012a0e0}, 0xc0005b8240)
+	/root/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589 +0x1b2
+net/http.serverHandler.ServeHTTP({0xb8f578?}, {0xb90ce8?, 0xc00012a0e0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000000120, {0xb91c50, 0xc00026d4d0})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+
+panic error time:2024-06-04 22:47:06
+runtime error: invalid memory address or nil pointer dereference
+stacktrace from panic:goroutine 54 [running]:
+runtime/debug.Stack()
+	/usr/local/go/src/runtime/debug/stack.go:24 +0x5e
+gin-ranking/pkg/logger.Recover.func1()
+	/home/abulish/goProject/netCourses/gin-dianZanZhuLiGongNeng/demo/pkg/logger/logger.go:142 +0x2aa
+panic({0x9fade0?, 0xf63d50?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+github.com/gin-contrib/sessions.(*session).Session(0xc0001300a0)
+	/root/go/pkg/mod/github.com/gin-contrib/sessions@v1.0.1/sessions.go:132 +0x2a
+github.com/gin-contrib/sessions.(*session).Set(0xc0001300a0, {0x9c7aa0, 0xc000193270}, {0x9c7ce0, 0xf35cb8})
+	/root/go/pkg/mod/github.com/gin-contrib/sessions@v1.0.1/sessions.go:88 +0x30
+gin-ranking/controllers.UserController.Login({}, 0xc0002d4100)
+	/home/abulish/goProject/netCourses/gin-dianZanZhuLiGongNeng/demo/controllers/user.go:73 +0x351
+github.com/gin-gonic/gin.(*Context).Next(0xc0002d4100)
+	/root/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185 +0x2b
+gin-ranking/router.Router.Sessions.func1(0xc0002d4100)
+	/root/go/pkg/mod/github.com/gin-contrib/sessions@v1.0.1/sessions.go:54 +0x169
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/root/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+gin-ranking/pkg/logger.Recover(0xc0002d4100)
+	/home/abulish/goProject/netCourses/gin-dianZanZhuLiGongNeng/demo/pkg/logger/logger.go:152 +0x62
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/root/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc0002d4100)
+	/root/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249 +0xe5
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/root/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1(0xc0002d4100)
+	/root/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102 +0x7a
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/root/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc0002d4100)
+	/root/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249 +0xe5
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/root/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0xc0005cc1a0, 0xc0002d4100)
+	/root/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633 +0x892
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0xc0005cc1a0, {0xb90ce8, 0xc00012a1c0}, 0xc0005b8000)
+	/root/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589 +0x1b2
+net/http.serverHandler.ServeHTTP({0xb8f578?}, {0xb90ce8?, 0xc00012a1c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000000090, {0xb91c50, 0xc00026d4d0})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+
