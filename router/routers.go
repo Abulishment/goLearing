@@ -31,5 +31,10 @@ func Router() *gin.Engine {
 		player.POST("/list", controllers.PlayerController{}.GetPlayers)
 	}
 
+	vote := r.Group("/vote")
+	{
+		vote.POST("/add", controllers.VoteController{}.AddVote)
+	}
+
 	return r
 }

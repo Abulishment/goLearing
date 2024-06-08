@@ -1,3 +1,7 @@
 2024-06-08 13:36:42 - ::1 "GET / HTTP/1.1 404 342.618µs "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0" "
 2024-06-08 13:36:43 - ::1 "GET /favicon.ico HTTP/1.1 404 8.301µs "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0" "
 2024-06-08 13:37:15 - ::1 "POST /player/list HTTP/1.1 200 336.663751ms "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" "
+2024-06-08 14:31:21 - ::1 "POST /vote/add HTTP/1.1 200 310.953081ms "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" "
+2024-06-08 14:33:51 - ::1 "POST /vote/add HTTP/1.1 200 2.677661ms "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" "
+2024-06-08 14:54:17 - ::1 "POST /vote/add HTTP/1.1 200 107.70768ms "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" "
+2024-06-08 14:55:33 - ::1 "POST /vote/add HTTP/1.1 200 171.594397ms "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" "
