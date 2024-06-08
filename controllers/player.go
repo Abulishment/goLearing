@@ -1,6 +1,7 @@
 package controllers
 
 import (
+	"gin-ranking/cache"
 	"gin-ranking/models"
 	"strconv"
 
@@ -23,6 +24,12 @@ func (p PlayerController) GetPlayers(c *gin.Context) {
 }
 
 func (p PlayerController) GetRanking(c *gin.Context) {
+
+	err := cache.Rdb.Set(cache.Rctx, "name", "zhangsan", 0).Err()
+	if err != nil {
+		panic(err)
+	}
+
 	aidStr := c.DefaultPostForm("aid", "0")
 	aid, _ := strconv.Atoi(aidStr)
 
