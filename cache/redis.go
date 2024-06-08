@@ -20,3 +20,7 @@ func init() {
 	})
 	Rctx = context.Background()
 }
+
+func ZScore(id int, score int) redis.Z {
+	return redis.Z{Score: float64(score), Member: id}
+}
