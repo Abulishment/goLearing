@@ -1,6 +1,7 @@
 package controllers
 
 import (
+	"gin-ranking/cache"
 	"gin-ranking/models"
 	"strconv"
 
@@ -50,6 +51,9 @@ func (v VoteController) AddVote(c *gin.Context) {
 			ReturnError(c, 4001, updateErr)
 		} else {
 			ReturnSuccess(c, 0, "投票成功", rs, 1)
+			//由于票数改变了，需要同时更新redis中相应score
+			var redisKey string = "ranking:" + strconv.Itoa(player.Aid)
+			cache.Rdb.ZIncrBy(cache.Rctx, redisKey, 1, strconv.Itoa(playerId))
 		}
 		return
 	}
