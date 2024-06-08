@@ -13,7 +13,7 @@ var (
 )
 
 func init() {
-	Rdb := redis.NewClient(&redis.Options{
+	Rdb = redis.NewClient(&redis.Options{
 		Addr:     config.RedisAddress,
 		Password: config.RedisPassword,
 		DB:       config.RedisDb,
