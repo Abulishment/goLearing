@@ -26,5 +26,10 @@ func Router() *gin.Engine {
 
 	}
 
+	player := r.Group("/player")
+	{
+		player.POST("/list", controllers.PlayerController{}.GetPlayers)
+	}
+
 	return r
 }
