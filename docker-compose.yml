@@ -1,0 +1,29 @@
+version: '3'  
+services:  
+  mysql:  
+    image: mysql:8.0.1  
+    restart: always  
+    environment:  
+      MYSQL_ROOT_PASSWORD: zdz20001020
+    volumes:  
+      - mysql_data:/var/lib/mysql  
+      - ./init_scripts/:/docker-entrypoint-initdb.d/ # 挂载你的SQL文件目录
+  
+  redis:  
+    image: redis:latest  
+    restart: always  
+    volumes:  
+      - redis_data:/data  
+  
+  server:  
+    build:  
+      context: . # 假设Dockerfile在当前目录下  
+      dockerfile: Dockerfile # 假设Dockerfile被命名为Dockerfile  
+    depends_on:  
+      - mysql  
+      - redis # 如果服务器程序依赖于MySQL和Redis服务，可以添加这些依赖  
+    ports:  
+      - "9999:9999"  
+volumes: # 顶层volumes部分用于定义命名卷  
+  mysql_data:  
+  redis_data:

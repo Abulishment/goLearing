@@ -12,6 +12,7 @@ var (
 	Rctx context.Context
 )
 
+// redis初始化时如果指定的redis服务器未启动也没关系，因为会在之后使用时重新连接.
 func init() {
 	Rdb = redis.NewClient(&redis.Options{
 		Addr:     config.RedisAddress,
