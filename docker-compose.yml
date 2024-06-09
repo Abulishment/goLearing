@@ -7,7 +7,7 @@ services:
       MYSQL_ROOT_PASSWORD: zdz20001020
     volumes:  
       - mysql_data:/var/lib/mysql  
-      - ./init_scripts/:/docker-entrypoint-initdb.d/ # 挂载你的SQL文件目录
+      - ./mysql_init_scripts/:/docker-entrypoint-initdb.d/ # 挂载你的SQL文件目录
   
   redis:  
     image: redis:latest  
