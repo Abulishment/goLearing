@@ -14,7 +14,7 @@
  Date: 19/07/2023 16:29:53
 */
 
-CREATE DATABASE IF NOT EXISTS ranking CHARACTER SET utf8 COLLATE utf8_general_ci;  
+CREATE DATABASE IF NOT EXISTS ranking CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;  
   
 USE ranking; 
 
@@ -57,14 +57,14 @@ CREATE TABLE `player`  (
 -- ----------------------------
 -- Records of player
 -- ----------------------------
-INSERT INTO `player` VALUES (1, 1, '0001', '下雨le', '很开心和大家见面，我喜欢书法，画画，希望大家能够喜欢我！', '/images/11.png', 2, 1686105642, 0);
-INSERT INTO `player` VALUES (2, 1, '0002', '栀夏', '很开心和大家见面，我喜欢书法，画画，希望大家能够喜欢我！', '/images/12.png', 3, 1686105642, 0);
-INSERT INTO `player` VALUES (3, 1, '0003', '闷油瓶', '很开心和大家见面，我喜欢书法，画画，希望大家能够喜欢我！', '/images/13.png', 3, 1686105642, 0);
-INSERT INTO `player` VALUES (4, 1, '0004', '喵喵兽', '很开心和大家见面，我喜欢书法，画画，希望大家能够喜欢我！', '/images/14.png', 0, 1686105642, 0);
-INSERT INTO `player` VALUES (5, 1, '0005', '弃殇', '很开心和大家见面，我喜欢书法，画画，希望大家能够喜欢我！', '/images/15.png', 3, 1686105642, 0);
-INSERT INTO `player` VALUES (6, 1, '0006', '冷巷', '很开心和大家见面，我喜欢书法，画画，希望大家能够喜欢我！', '/images/16.png', 0, 1686105642, 0);
-INSERT INTO `player` VALUES (7, 1, '0007', '栀子香气', '很开心和大家见面，我喜欢书法，画画，希望大家能够喜欢我！', '/images/17.png', 7, 1686105642, 0);
-INSERT INTO `player` VALUES (8, 1, '0008', '失与倦', '很开心和大家见面，我喜欢书法，画画，希望大家能够喜欢我！', '/images/18.png', 0, 1686105642, 0);
+INSERT INTO `player` VALUES (1, 1, '0001', '喜羊羊', '音乐，是我心灵的声音，是我与世界沟通的桥梁。我渴望在这个舞台上，用我的音乐触动你们的心弦。请给我一个机会，让我用旋律诉说我的故事。', '/images/11.png', 2, 1686105642, 0);
+INSERT INTO `player` VALUES (2, 1, '0002', '美羊羊', '跳舞对我来说，不仅仅是动作和节奏，更是一种态度。我热爱舞蹈，热爱在舞台上展现自我。请支持我，让我用舞蹈点燃你们的热情！', '/images/12.png', 3, 1686105642, 0);
+INSERT INTO `player` VALUES (3, 1, '0003', '懒羊羊', '我的画布，是我的世界，是我内心深处的梦境。我希望你们能在我的画作中找到一丝共鸣，感受我画笔下的奇妙世界。', '/images/13.png', 3, 1686105642, 0);
+INSERT INTO `player` VALUES (4, 1, '0004', '沸羊羊', '诗歌是我灵魂的食粮，朗诵是我情感的出口。在这里，我将用最真挚的情感，为你们诵读每一篇诗作，让文字的力量直达你们的心灵。', '/images/14.png', 0, 1686105642, 0);
+INSERT INTO `player` VALUES (5, 1, '0005', '灰太狼', '魔术，是一种神秘的艺术，它能带给我们无尽的惊喜。请期待我的表演，让我用魔术为你们揭开神秘的面纱。', '/images/15.png', 3, 1686105642, 0);
+INSERT INTO `player` VALUES (6, 1, '0006', '红太狼', '书法，是中华文化的瑰宝。我致力于传承这一艺术，用笔墨书写历史，用文字传递文化。请投我一票，让我为你们展示书法的魅力。', '/images/16.png', 0, 1686105642, 0);
+INSERT INTO `player` VALUES (7, 1, '0007', '蕉太狼', '美食，是治愈心灵的良药。我热爱烹饪，热爱将各种食材变成美味佳肴。请投我一票，让我用美食为你们带来幸福的味道！', '/images/17.png', 7, 1686105642, 0);
+INSERT INTO `player` VALUES (8, 1, '0008', '小灰灰', '手工，是我表达创意的方式。我喜欢用手中的材料创造出独一无二的作品。请支持我，让我用双手为你们带来惊喜和感动。！', '/images/18.png', 0, 1686105642, 0);
 
 -- ----------------------------
 -- Table structure for user

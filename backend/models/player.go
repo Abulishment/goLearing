@@ -10,7 +10,7 @@ type Player struct {
 	Id          int    `json:"id"`
 	Aid         int    `json:"aid"`
 	Ref         string `json:"ref"`
-	NickName    string `json:"nickname"`
+	Nickname    string `json:"nickname"`
 	Declaration string `json:"declaration"`
 	Avatar      string `json:"avatar"`
 	Score       int    `json:"score"`

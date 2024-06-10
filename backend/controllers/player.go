@@ -37,11 +37,11 @@ func (p PlayerController) GetRanking(c *gin.Context) {
 		for _, value := range rs {
 			id, _ := strconv.Atoi(value)
 			rsInfo, _ := models.GetPlayerInfo(id)
-			if rsInfo.Id > 0 {
+			if rsInfo.Id != 0 {
 				players = append(players, rsInfo)
 			}
 		}
-		ReturnSuccess(c, 0, "success", players, 1)
+		ReturnSuccess(c, 0, "success-redis", players, 1)
 		return
 	}
 
