@@ -67,6 +67,7 @@ func (u UserController) Login(c *gin.Context) {
 
 	if user.Password != EncryMd5(password) {
 		ReturnError(c, 4001, "用户名或密码不正确")
+		return
 	}
 
 	session := sessions.Default(c)
